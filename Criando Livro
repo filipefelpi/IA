@@ -1,0 +1,78 @@
+A técnica consiste em 3 etapas:
+1. Definição do tema, estrutura e Criação do Prompt inicial: 
+	→ Forneça informações essenciais para o ChatGPT.
+
+Tema do livro e pergunta principal:
+	→ Especifique claramente sobre o que o livro tratará, inclua a pergunta central que o livro pretende responder.
+Um bom livro deve responder uma grande pergunta.
+
+Tom que será usado:
+	→ Especifique o tom que deseja adotar.
+
+Estilo de escrita desejado:
+	→ Indique o estilo desejado, mencionando autores ou obras como referência.
+	→ Reforce os pontos interessantes do estilo, autor escolhido para emular melhor a escolha.
+
+Extensão do livro:
+	→ Especifique o número de páginas ou palavras que o livro deve ter.
+
+Estrutura do livro:
+	→ Crie um esboço detalhado, liste os capítulos e subcapítulos, definindo o fluxo lógico do conteúdo.
+Isso permitirá que ele desenvolva um raciocínio estruturado, seguindo uma cadeia de pensamento, etapa por etapa. Se solicitado um livro completo, ele não fornecerá.
+
+Abordagem da IA: 
+	→ Explique como a IA deve abordar a tarefa, incluindo a importância de utilizar a técnica de Indexamento de Prompts, criando uma sequência de respostas, para caso a IA se perder, ela possar retomar facilmente a partir de um ponto específico, mantendo o fluxo e a estrutura do livro.
+Sem indexação de prompt, o ChatGPT pode esquecer a estrutura inicial e criar novos capítulos aleatoriamente.
+Usar indexação aumenta muito as chances de o modelo seguir fielmente a estrutura original do livro, mantendo a consistência do conteúdo.
+
+🤖 PROMPT: "Vamos criar um livro juntos sobre [TEMA]. [Pontos que deseja no livro]
+Precisamos responder a pergunta: [Grande pergunta]
+- TOM: [otimista; direto, cômico, conversacional, etc]
+- Estilo de Escrita: [AUTOR REFERÊNCIA] (uso de histórias, analogias, comparações, mistérios e surpresas)
+- TAMANHO: [NÚMERO] páginas; cerca de [QUANTIDADE DE PALAVRAS] palavras.
+– Estrutura: [NÚMERO] Capítulos, com [NÚMERO] de subcapítulos cada.
+- Para isso, vamos:
+1) Criar a estrutura para o livro (capítulo e subcapítulo)
+2) Escrever subcapítulo por subcapítulo
+3) Referencias a estrutura do livro em toda nova resposta, de maneira que não esqueçamos dela. Para isso, toda resposta sua levará um número sequencial, começando em #chat1. Dessa maneira, vamos poder falar "Baseado na nossa estrutura do livro, evidenciada em #chat1, continue para o subcapítulo X"
+Entendido? Se sim, cria a estrutura do livro.''
+
+Exemplo de PROMPT: 
+''Vamos criar um livro juntos sobre a história do trabalho. Como ele surgiu, as principais mudanças que fizeram ele mudar. Como nós enxergamos trabalho hoje, como isso está mudando, como isso deve mudar com IAs. Precisamos responder a pergunta: teremos trabalho em 20 anos? Ele será mais interessante do que o que temos hoje?
+TOM: otimista; direto.
+Estilo de Escrita: Malcom Gladwell (uso de histórias, analogias, comparações, mistérios e surpresas.)
+TAMANHO: 50 páginas; cerca de 15.000 palavras.
+Estrutura: 5 capítulos, com 3 subcapítulos cada.
+Para isso, vamos:
+1) Criar a estrutura para o livro (capítulo e subcapítulo)
+2) Escrever subcapítulo por subcapítulo
+3) Referencias a estrutura do livro em toda nova resposta, de maneira que não esqueçamos dela. Para isso, toda resposta sua levará um número sequencial, começando em #chat1. Dessa maneira, vamos poder falar "Baseado na nossa estrutura do livro, evidenciada em #chat1, continue para o subcapítulo X"
+Entendido? Se sim, cria a estrutura do livro.''
+
+2. Continue seguindo cada etapa da criação do livro: 
+	→ Defina a quantidade de palavras desejada para cada seção. Se não especificado, o padrão é 500 palavras. Para obter textos mais longos, solicite um número maior de palavras. 
+Exemplo: Pedir 1.500 palavras geralmente resulta em 800-900 palavras, proporcionando respostas mais detalhadas e satisfatórias.
+Utilize o prompt abaixo para escrever o primeiro capítulo:
+🤖 PROMPT: "Continue para o capítulo 1.1 [nome do capítulo/subcapítulo], escrevendo pelo menos 1.500 palavras.''
+
+Utilize o prompt abaixo para escrever o subcapítulo:
+🤖 PROMPT: "Continue para o capítulo 1.2 [nome do capítulo/subcapítulo], escrevendo pelo menos 1.500 palavras.''
+
+Confirme se o resultado está no outline do livro e se os subtítulos dos capítulos não foram alterados. Referencie algo que já foi criado no #chat para corrigir o erro: 
+🤖 PROMPT: "Baseado no #Chat[número] escreva o cap. 1.3 [nome do capítulo].''
+
+3. Compile e Revise o Conteúdo:
+	→ À medida que o ChatGPT escreve os subcapítulos, copie e cole o conteúdo em um editor de texto (Google Docs, Word, etc.).
+	→ Revise o conteúdo cuidadosamente, edite a linguagem, corrija erros gramaticais e ajuste o estilo para garantir a qualidade e a fluidez do texto.
+
+Dicas:
+• Título no Prompt: Inclua o título do subcapítulo no prompt para evitar desvios na estrutura.
+• Detalhamento do Prompt: Quanto mais detalhado for o prompt, melhor o ChatGPT entenderá suas expectativas.
+• Referência à Estrutura Inicial: Sempre que solicitar novos trechos, referencie a estrutura inicial para manter a coerência.
+• Solicitação de Mais Palavras: Solicite um número maior de palavras no prompt (ex: 1500) geralmente resulta em respostas mais longas e elaboradas.
+
+Vantagens:
+• Unidade do Livro: A referência constante ao estilo de escrita escolhido contribui para a unidade do livro.
+• Gestão Facilitada: A escrita subcapítulo por subcapítulo torna o processo menos intimidador e mais fácil de gerenciar.
+• Foco e Coerência: A estrutura passo a passo e a indexação de prompts ajudam a manter o foco e a coerência ao longo do livro.
+• Ajustes e Adaptações: Permite ajustes e adaptações ao longo do processo, garantindo que o conteúdo final atenda às suas expectativas.
